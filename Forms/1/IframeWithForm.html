@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="IframeWithForm.css">
+</head>
+<body>
+    <form class="form" action="https://www.bing.com/search" method="get" target="iFrame" >
+        <h1>Search in bing</h1>
+        <div class="form__controls">
+            <label for="query">Query: </label>
+            <input type="text" id="query" name="q" placeholder="enter your word to search in bing...">
+        </div>
+        <div class="form__controls">
+            <button class="form__button" type="submit">Search</button>
+        </div>
+    </form>
+    <div class="iFrame">
+        <iframe  name="iFrame" width="100%" src="https://www.bing.com/search?q=javascript" height="500px">
+        </iframe>
+    </div>
+</body>
+</html>

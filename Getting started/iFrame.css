@@ -1,0 +1,15 @@
+.iFrame__links {
+    text-align: right;
+    padding: 20px;
+    margin: 0 auto;
+    width: 70%;
+}
+.iFrame__link {
+    padding: 10px 5px;
+    text-decoration: none;
+    color: gray;
+}
+.iFrame {
+    margin: 0 auto;
+    width: 70%;
+}
