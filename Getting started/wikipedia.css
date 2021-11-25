@@ -34,3 +34,24 @@ code{
     width: 15px;
     height: 11px;
 }
+
+ol {
+    counter-reset: item;
+    list-style: none;
+}
+ol li:before {
+    content: counters(item,'.') " ";
+    counter-increment: item;
+}
+table {
+    border: 1px solid #a2a9b1;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #a2a9b1;
+    padding: .2rem .4rem;
+}
+thead{
+    background-color:  #ececec;
+}
