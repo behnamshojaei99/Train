@@ -5,3 +5,32 @@ code{
     background-color: #f8f9fa;
     border: 1px solid #eaecf0;
 }
+
+.box {
+    border: 1px solid #a2a9b1;
+    border-left: 10px solid #f28500 ;
+    display: flex;
+    padding: 6px;
+
+}
+
+.box >img {
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.newapi__image {
+    float: right;
+    border: 1px solid #a2a9b1;
+    padding: .2rem;
+    margin: .2rem 0 .2rem 1rem;
+
+}
+
+
+
+.newapi__icon {
+    background-image: url("https://en.wikipedia.org/w/resources/src/mediawiki.skinning/images/magnify-clip-ltr.svg?8330e");
+    width: 15px;
+    height: 11px;
+}

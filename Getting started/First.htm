@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>First exercise</title>
@@ -8,14 +8,28 @@
                 counter-reset: item;
                 list-style: none;
             }
-            li:before {
+            ol li:before {
                 content: counters(item,'.') " ";
                 counter-increment: item;
             }
+            table {
+                border: 1px solid #a2a9b1;
+                border-collapse: collapse;
+            }
+
+            td, th {
+                border: 1px solid #a2a9b1;
+                padding: .2rem .4rem;
+            }
+            thead{
+                background-color:  #ececec;
+            }
+
         </style>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+
         <h1>HTML</h1>
         <hr>
         <p>From Wikipedia, the free encyclopedia</p>
@@ -48,62 +62,414 @@
                with older software. HTML5 is intended to subsume not only <a href="https://en.wikipedia.org/wiki/HTML_4">HTML 4</a> but also XHTML 1 and <a href="https://en.wikipedia.org/wiki/Document_Object_Model">DOM</a> Level 2 HTML.<a href="https://en.wikipedia.org/wiki/HTML5#cite_note-HTML5diffHTML4-quote-6"><sup>[6]</sup></a>
         </p>
         <p>
-            HTML5 includes detailed processing models to encourage more interoperable implementations; it extends, improves, and rationalizes the markup available for documents and introduces markup and application programming interfaces (APIs) for complex web applications.[7] For the same reasons, HTML5 is also a candidate for cross-platform mobile applications because it includes features designed with low-powered devices in mind.
+            HTML5 includes detailed processing models
+            to encourage more interoperable implementations;
+            it extends, improves, and rationalizes the markup available for documents
+            and introduces markup and <a href="https://en.wikipedia.org/wiki/Application_programming_interface">application programming interfaces</a> (APIs)
+            for complex <a href="https://en.wikipedia.org/wiki/Web_application">web applications.<sup>[7]</sup></a> For the same reasons,
+            HTML5 is also a candidate for cross-platform mobile applications because it includes features designed with low-powered devices in mind.
         </p>
         <p>
-            Many new syntactic features are included. To natively include and handle multimedia and graphical content, the new <code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code> and <code>&lt;canvas&gt;</code>
-             elements were added, and support for scalable vector graphics (SVG) content and MathML for mathematical
-              formulas was also added. To enrich the semantic content of documents, new page structure elements such as 
+            Many new <a href="https://en.wikipedia.org/wiki/Syntax_(programming_languages)">syntactic</a> features are included.
+            To natively include and handle multimedia and <a href="https://en.wikipedia.org/wiki/2D_computer_graphics">graphical</a> content,
+            the new <code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code> and <code>&lt;canvas&gt;</code>
+            <a href="https://en.wikipedia.org/wiki/HTML_element">elements</a> were added, and support for <a href="https://en.wikipedia.org/wiki/Scalable_vector_graphics">
+            scalable vector graphics (SVG)</a> content and MathML for mathematical
+            formulas was also added. To enrich the <a href="https://en.wikipedia.org/wiki/Semantic_Web">semantic</a> content of documents, new page structure elements such as
               <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>&lt;section&gt;, <code>&lt;article&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;nav&gt;</code>, and <code>&lt;figure&gt;</code>
-               are added. New attributes were introduced, some elements and attributes were removed, and others such as 
+            are added. New <a href="https://en.wikipedia.org/wiki/HTML_attribute">attributes</a> were introduced, some elements and attributes were removed, and others such as
                <code>&lt;a&gt;</code>, <code>&lt;cite&gt;</code>, and <code>&lt;menu&gt;</code> were changed, redefined, or standardized. 
-               The APIs and Document Object Model (DOM) are now fundamental parts of the HTML5 specification,[7] 
-               and HTML5 also better defines the processing for any invalid documents.[8]
+            The APIs and <a href="https://en.wikipedia.org/wiki/Document_Object_Model">Document Object Model</a> (DOM) are now fundamental parts of the HTML5 specification,[7]
+            and HTML5 also better defines the processing for any invalid documents.<a href="https://en.wikipedia.org/wiki/HTML5#cite_note-8"><sup>[8]</sup></a>
         </p>
         <div class="tableOfContent" style="border: 2px solid gray;">
             <p style="text-align: center;"><b>content</b></p>
             <ol >
-                
-                <li>History
+
+                <li><a href="#history">History</a>
                     <ol>
-                        <li>"Thoughts on Flash"</li>
-                        <li>Last call, candidacy, and recommendation stages</li>
-                        <li>Timeline</li>
-                        <li>W3C and WHATWG conflict
+                        <li><a href="#thoughts">"Thoughts on Flash"</a></li>
+                        <li><a href="#lastCall">Last call, candidacy, and recommendation stages</a></li>
+                        <li><a href="#timeline">Timeline</a></li>
+                        <li><a href="#W3C">W3C and WHATWG conflict</a>
                             <ol>
-                                <li>Differences between the two standards</li>
+                                <li><a href="#difference">Differences between the two standards</a></li>
                             </ol>
                         </li>
                     </ol>
                 </li>
-                <li>Features and APIs</li>
-                <li>Features
+                <li><a href="#featuresApi">Features and APIs</a></li>
+                <li><a href="#features">Features</a>
                     <ol>
-                        <li>Markup</li>
-                        <li>New APIs</li>
-                        <li>XHTML 5 (XML-serialized HTML 5)</li>
-                        <li>Error handling</li>
-                        <li>Popularity</li>
-                        <li>Differences from HTML 4.01 and XHTML 1.x</li>
+                        <li><a href="#markup">Markup</a></li>
+                        <li><a href="#newApi">New APIs</a></li>
+                        <li><a href="#XHTML5">XHTML 5 (XML-serialized HTML 5)</a></li>
+                        <li><a href="#error handling">Error handling</a></li>
+                        <li><a href="#popularity">Popularity</a></li>
+                        <li><a href="#difference">Differences from HTML 4.01 and XHTML 1.x</a></li>
                     </ol>
                 </li>
-                <li>Logo</li>
-                <li>Digital rights management</li>
-                <li>See also</li>
-                <li>References</li>
-                <li>External links</li>
+                <li><a href="#logo">Logo</a></li>
+                <li><a href="#DRM">Digital rights management</a></li>
+                <li><a href="#seeAlso">See also</a></li>
+                <li><a href="#refrences">References</a></li>
+                <li><a href="#externalLinks">External links</a></li>
             </ol>
         </div>
-        <h2 id="history">History</h2>
+        <h2 id="history">History <span>[ <a href="https://en.wikipedia.org/w/index.php?title=HTML5&action=edit&section=1">edit</a> ]</span></h2>
         <hr>
         <p>
-            The Web Hypertext Application Technology Working Group (WHATWG) began work on the new standard in 2004. At that time, HTML 4.01 had not been updated since 2000,[9] and the World Wide Web Consortium (W3C) was focusing future developments on XHTML 2.0. In 2009, the W3C allowed the XHTML 2.0 Working Group's charter to expire and decided not to renew it.[10]
+            The <a href="https://en.wikipedia.org/wiki/Web_Hypertext_Application_Technology_Working_Group">Web Hypertext Application Technology Working Group</a>
+            (WHATWG) began work on the new standard in 2004. At that time, HTML 4.01 had not been updated since 2000,<a href="https://en.wikipedia.org/wiki/HTML5#cite_note-9"><sup>[9]</sup></a>
+            and the <a href="https://en.wikipedia.org/wiki/World_Wide_Web_Consortium">World Wide Web Consortium</a> (W3C) was focusing future
+            developments on <a href="https://en.wikipedia.org/wiki/XHTML_2.0">XHTML</a> 2.0. In 2009,
+            the W3C allowed the XHTML 2.0 Working Group's charter to expire and decided not to renew it.<a href="https://en.wikipedia.org/wiki/HTML5#cite_note-W3C_hist-10"><sup>[10]</sup></a>
         </p>
         <p>
             The Mozilla Foundation and Opera Software presented a position paper at a World Wide Web Consortium (W3C) workshop in June 2004,[11] focusing on developing technologies that are backward-compatible with existing browsers,[12] including an initial draft specification of Web Forms 2.0. The workshop concluded with a vote—8 for, 14 against—for continuing work on HTML.[13] Immediately after the workshop, WHATWG was formed to start work based upon that position paper, and a second draft, Web Applications 1.0, was also announced.[14] The two specifications were later merged to form HTML5.[15] The HTML5 specification was adopted as the starting point of the work of the new HTML working group of the W3C in 2007.
         </p>
         <p>WHATWG's Ian Hickson (Google) and David Hyatt (Apple) produced W3C's first public working draft of the specification on 22 January 2008.[2]</p>
-        <h3><q cite="Thoughts on Flash">Thoughts on Flash</q></h3>
+        <h3 id="thoughts"><q cite="Thoughts on Flash">Thoughts on Flash</q><span>[ <a href="https://en.wikipedia.org/w/index.php?title=HTML5&action=edit&section=2">edit</a> ]</span></h3>
+        <p style="padding-left: 10px">Main article: <a href="https://en.wikipedia.org/wiki/Thoughts_on_Flash">Thoughts on Flash</a></p>
+    <p>
+        While some features of HTML5 are often compared to Adobe Flash, the two technologies are very different. Both include features for playing audio and video within web pages, and for using Scalable Vector Graphics. However, HTML5 on its own cannot be used for animation or interactivity – it must be supplemented with CSS3 or JavaScript. There are many Flash capabilities that have no direct counterpart in HTML5 (see Comparison of HTML5 and Flash). HTML5's interactive capabilities became a topic of mainstream media attention around April 2010[16][17][18][19] after Apple Inc.'s then-CEO Steve Jobs issued a public letter titled "Thoughts on Flash" in which he concluded that "Flash is no longer necessary to watch video or consume any kind of web content" and that "new open standards created in the mobile era, such as HTML5, will win".[20] This sparked a debate in web development circles suggesting that, while HTML5 provides enhanced functionality, developers must consider the varying browser support of the different parts of the standard as well as other functionality differences between HTML5 and Flash.[21] In early November 2011, Adobe announced that it would discontinue development of Flash for mobile devices and reorient its efforts in developing tools using HTML5.[22] On 25 July 2017, Adobe announced that both the distribution and support of Flash would cease by the end of 2020.[23] Adobe itself officially discontinued Flash on 31 December 2020 and all Flash content was blocked from running in Flash Player as of 12 January 2021.[24]
+    </p>
+    <h3 id="lastCall">
+        Last call, candidacy, and recommendation stages <span>[ <a href="https://en.wikipedia.org/w/index.php?title=HTML5&action=edit&section=3">edit</a> ]</span>
+    </h3>
+    <p>On 14 February 2011, the W3C extended the charter of its HTML Working Group with clear milestones for HTML5. In May 2011, the working group advanced HTML5 to "Last Call", an invitation to communities inside and outside W3C to confirm the technical soundness of the specification. The W3C developed a comprehensive test suite to achieve broad interoperability for the full specification by 2014, which was the target date for recommendation.[25] In January 2011, the WHATWG renamed its "HTML5" specification HTML Living Standard. The W3C nevertheless continued its project to release HTML5.[26]</p>
+    <p>In July 2012, WHATWG and W3C decided on a degree of separation. W3C will continue the HTML5 specification work, focusing on a single definitive standard, which is considered as a "snapshot" by WHATWG. The WHATWG organization continues its work with HTML5 as a "living standard". The concept of a living standard is that it is never complete and is always being updated and improved. New features can be added but functionality will not be removed.[27]</p>
+    <p>In December 2012, W3C designated HTML5 as a Candidate Recommendation.[28] The criterion for advancement to W3C Recommendation is "two 100% complete and fully interoperable implementations".[29]</p>
+    <p>On 16 September 2014, W3C moved HTML5 to Proposed Recommendation.[30] On 28 October 2014, HTML5 was released as a W3C Recommendation,[31] bringing the specification process to completion.[4] On 1 November 2016, HTML 5.1 was released as a W3C Recommendation.[32] On 14 December 2017, HTML 5.2 was released as a W3C Recommendation.[33]</p>
+    <h3 id="timeline">
+        Timeline <span>[ <a href="https://en.wikipedia.org/w/index.php?title=HTML5&action=edit&section=4">edit</a> ]</span>
+    </h3>
+    <p>The combined timelines for HTML5.0, HTML5.1, HTML5.2 and HTML 5.3:</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Version</th>
+                <th>First draft</th>
+                <th>Candidate recommendation</th>
+                <th>Recommendation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML5.0</td>
+                <td>2007<sup>[34]</sup></td>
+                <td>2012</td>
+                <td>2014</td>
+            </tr>
+            <tr>
+                <td>HTML5.1</td>
+                <td>2012</td>
+                <td>2015</td>
+                <td>2016</td>
+            </tr>
+            <tr>
+                <td>HTML5.2<sup>[35]</sup></td>
+                <td>2015</td>
+                <td>2017</td>
+                <td>2017</td>
+            </tr>
+            <tr>
+                <td>HTML5.3</td>
+                <td>2017<sup>[36]</sup></td>
+                <td style="text-align: center; background-color: #ececec">N/A</td>
+                <td style="text-align: center; background-color: #ececec">N/A</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3 id="W3C">
+        W3C and WHATWG conflict <span>[ <a href="https://en.wikipedia.org/w/index.php?title=HTML5&action=edit&section=5">edit</a> ]</span>
+    </h3>
+    <p style="padding-left: 10px">See also: <a href="https://en.wikipedia.org/wiki/HTML#Transition_of_HTML_Publication_to_WHATWG">HTML § Transition of HTML Publication to WHATWG</a></p>
+    <p>The W3C ceded authority over the HTML and DOM standards to WHATWG on 28 May 2019, as it considered that having two standards is harmful.[37][38][39][3] The HTML Living Standard is now authoritative. However, W3C will still participate in the development process of HTML.</p>
+    <p>Before the ceding of authority, W3C and WHATWG had been characterized as both working together on the development of HTML5,[10] and yet also at cross purposes[27][4] ever since the July 2012 split, creating WHATWG. The W3C standard was snapshot-based and static, while the WHATWG is a continually updated "living standard". The relationship had been described as "fragile", even a "rift",[40] and characterized by "squabbling".[4]</p>
+    <p>In at least one case, namely the permissible content of the <code>&lt;cite&gt;</code> element, the two specifications directly contradicted each other (as of July 2018), with the W3C definition allowing a broader range of uses than the WHATWG definition.[41][42]</p>
+    <p>The "Introduction" section in the WHATWG spec (edited by Ian "Hixie" Hickson) is critical of W3C, e.g. "Note: Although we have asked them to stop doing so, the W3C also republishes some parts of this specification as separate documents." In its "History" subsection it portrays W3C as resistant to Hickson's and WHATWG's original HTML 5 plans, then jumping on the bandwagon belatedly (though Hickson was in control of the W3C HTML 5 spec, too). Regardless, it indicates a major philosophical divide between the organizations:[43]</p>
+    <div style="padding-left: 3rem">
+        <p>For a number of years, both groups then worked together. In 2011, however, the groups came to the conclusion that they had different goals: the W3C wanted to publish a "finished" version of "HTML5", while the WHATWG wanted to continue working on a Living Standard for HTML, continuously maintaining the specification rather than freezing it in a state with known problems, and adding new features as needed to evolve the platform.</p>
+        <p>Since then, the WHATWG has been working on this specification (amongst others), and the W3C has been copying fixes made by the WHATWG into their fork of the document (which also has other changes).</p>
+    </div>
+    <p>The two entities signed an agreement to work together on a single version of HTML on 28 May 2019.[44]</p>
+    <h4>
+        Differences between the two standards <span>[ <a href="https://en.wikipedia.org/w/index.php?title=HTML5&action=edit&section=6">edit</a> ]</span>
+    </h4>
+    <p>In addition to the contradiction in the <code>&lt;cite&gt;</code> element mentioned above, other differences between the two standards include at least the following, as of September 2018:</p>
+    <table >
+        <caption>Content or Features Unique to W3C or WHATWG Standard</caption>
+        <thead>
+            <tr>
+                <th></th>
+                <th>W3C<sup>[45]</sup></th>
+                <th>WHATWG<sup>[46]</sup></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Site pagination</td>
+                <td></td>
+                <td>Single page version[47] (allows global search of contents)</td>
+            </tr>
+            <tr>
+                <td>Chapters</td>
+                <td></td>
+                <td>
+                    §5 Microdata[48]
+                    <br>
+                    §9 Communication[49]
+                    <br>
+                    §10 Web workers[50]
+                    <br>
+                    §11 Web storage[51]
+                </td>
+            </tr>
+            <tr>
+                <td>Global attributes</td>
+                <td>:<sup>[52]</sup> class, id</td>
+                <td>:<sup>[53]</sup> <code>autocapitalize</code>, <code>enterkeyhint</code>, <code>inputmode</code>, <code>is</code>, <code>itemid</code>, <code>itemprop</code>, <code>itemref</code>, <code>itemscope</code>, <code>itemtype</code>, <code>nonce</code></td>
+            </tr>
+            <tr>
+                <td>Chapter Elements of HTML</td>
+                <td></td>
+                <td>
+                    §4.13 Custom elements[54]
+                </td>
+            </tr>
+            <tr>
+                <td>Elements</td>
+                <td>
+                    <code>&lt;rb&gt;</code>,<sup>[55]</sup> <code>&lt;rtc&gt;</code><sup>[56]</sup> (See compatibility notes below.)
+                    <code>&lt;address&gt;</code><sup>[57]</sup> is in section Grouping content.
+                </td>
+                <td>
+                    <code>&lt;address&gt;</code>,<sup>[57]</sup> is in section Grouping content.
 
+                    <code>&lt;hgroup&gt;</code>,<sup>[58]</sup> <code>&lt;menu&gt;</code>,<sup>[59]</sup> <code>&lt;slot&gt;</code>,<sup>[60]</sup> (See compatibility notes below.)
+                    <code>&lt;address&gt;</code>,<sup>[61]</sup> is in section Sections.</td>
+            </tr>
+            <tr>
+                <td>§ <code>&lt;meta&gt;</code></td>
+                <td>
+                    §4.2.5.4. Other pragma directives,<sup>[62]</sup> based on deprecated WHATWG procedure.<sup>[63]</sup>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>§ Sections</td>
+                <td></td>
+                <td>
+                    § 4.3.11.2 Sample outlines[64]
+                    <br>
+                    § 4.3.11.3 Exposing outlines to users[65]
+                </td>
+            </tr>
+            <tr>
+                <td>Structured data</td>
+                <td>
+                    Recommends RDFa (code examples,<sup>[66]</sup><sup>[57]</sup><sup>[67]</sup> separate specs,<sup>[68]</sup><sup>[69]</sup> no special attributes[52]).
+                </td>
+                <td>
+                    Recommends Microdata (code examples,<sup>[70]</sup><sup>[71]</sup><sup>[72]</sup><sup>[73]</sup> spec chapter,<sup>[48]</sup> special attributes<sup>[53]</sup>).
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p>The following table provides data from the Mozilla Development Network on compatibility with major browsers, as of September 2018, of HTML elements unique to one of the standards:</p>
+    <table>
+        <thead>
+        <tr>
+            <th>Element	</th>
+            <th>Standard</th>
+            <th>Compatibility</th>
+            <th>Note</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><code>&lt;rb&gt;</code><sup>[74]</sup></td>
+            <td>W3C</td>
+            <td>All browsers, except Edge</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>&lt;rtc&gt;</code><sup>[75]</sup></td>
+            <td>W3C</td>
+            <td>
+                None, except Firefox
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>&lt;hgroup&gt;</code><sup>[76]</sup></td>
+            <td>WHATWG</td>
+            <td>All browsers</td>
+            <td>"[Since] the HTML outline algorithm is not implemented in any browsers ... the <code>&lt;hgroup&gt;</code> semantics are in practice only theoretical."</td>
+        </tr>
+        <tr>
+            <td><code>&lt;menu&gt;</code><sup>[77]</sup></td>
+            <td>WHATWG</td>
+            <td>
+                Full support only in Edge and Firefox desktop.
+                <br>
+                Partial support in Firefox mobile.
+                <br>
+                Supported in Opera with user opt-in.
+                <br>
+                Not supported in other browsers.
+            </td>
+            <td>Experimental technology</td>
+        </tr>
+        <tr>
+            <td><code>&lt;slot&gt;</code><sup>[78]</sup></td>
+            <td>
+                WHATWG
+            </td>
+            <td>
+                All browsers, except IE
+            </td>
+            <td>Experimental technology</td>
+        </tr>
+
+        </tbody>
+    </table>
+    <h2 id="featuresApi">
+        Features and APIs <span>[ <a href="https://en.wikipedia.org/w/index.php?title=HTML5&action=edit&section=7">edit</a> ]</span>
+    </h2>
+        <hr>
+    <div style="margin: 0 5rem" class="box">
+        <img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Ambox_current_red_Asia_Australia.svg/63px-Ambox_current_red_Asia_Australia.svg.png">
+        <p>This section needs to be updated. The reason given is: Last sentence marks 2016 as the future instead of past. Please help update this article to reflect recent events or newly available information. (October 2018)</p>
+    </div>
+    <p>The W3C proposed a greater reliance on modularity as a key part of the plan to make faster progress, meaning identifying specific features, either proposed or already existing in the spec, and advancing them as separate specifications. Some technologies that were originally defined in HTML 5 itself are now defined in separate specifications:</p>
+    <ul>
+        <li>HTML Working Group – HTML Canvas 2D Context;</li>
+        <li>Web Apps Working Group – Web Messaging, Web workers, Web storage, WebSocket, Server-sent events, Web Components[79] (this was not part of HTML 5, though); the Web Applications Working Group was closed in October 2015 and its deliverables transferred to the Web Platform Working Group (WPWG).</li>
+        <li>IETF HyBi Working Group – WebSocket Protocol;</li>
+        <li>WebRTC Working Group – WebRTC;</li>
+        <li>Web Media Text Tracks Community Group – WebVTT.</li>
+    </ul>
+    <p>Some features that were removed from the original HTML 5 specification have been standardized separately as modules, such as Microdata and Canvas. Technical specifications introduced as HTML 5 extensions such as Polyglot markup have also been standardized as modules. Some W3C specifications that were originally separate specifications have been adapted as HTML 5 extensions or features, such as SVG. Some features that might have slowed down the standardization of HTML 5 were or will be standardized as upcoming specifications, instead.</p>
+    <h2 id="features">
+        Features <span>[ <a href="https://en.wikipedia.org/w/index.php?title=HTML5&action=edit&section=8">edit</a> ]</span>
+    </h2>
+    <hr>
+    <h3 id="markup">
+        Markup <span>[ <a href="https://en.wikipedia.org/w/index.php?title=HTML5&action=edit&section=9">edit</a> ]</span>
+    </h3>
+    <p>
+        HTML 5 introduces elements and attributes that reflect typical usage on modern websites. Some of them are semantic replacements for common uses of generic block (<code>&lt;div&gt;</code>) and inline (<code>&lt;span&gt;</code>) elements, for example <code>&lt;nav&gt;</code> (website navigation block), <code>&lt;footer&gt;</code> (usually referring to bottom of web page or to last lines of HTML code), or <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> instead of <code>&lt;object&gt;</code>.[80][81][82] Some deprecated elements from HTML 4.01 have been dropped, including purely presentational elements such as <code>&lt;font&gt;</code> and <code>&lt;center&gt;</code>, whose effects have long been superseded by the more capable Cascading Style Sheets.[83] There is also a renewed emphasis on the importance of client-side JavaScript used to create dynamic web pages.[citation needed]
+    </p>
+    <p>
+        The HTML 5 syntax is no longer based on SGML[84][85] despite the similarity of its markup. It has, however, been designed to be backward-compatible with common parsing of older versions of HTML. It comes with a new introductory line that looks like an SGML document type declaration, <code>&lt;!DOCTYPE html&gt;</code>, which triggers the standards-compliant rendering mode.[86] Since 5 January 2009, HTML 5 also includes Web Forms 2.0, a previously separate WHATWG specification.[87][88]
+    </p>
+    <h3 id="newApi">
+        New APIs <span>[ <a href="https://en.wikipedia.org/w/index.php?title=HTML5&action=edit&section=10">edit</a> ]</span>
+    </h3>
+    <div class="newapi__image">
+        <div style="width: 422px;">
+            <a>
+                <img alt="html5 api" width="420px" height="283px" style="border: 1px solid #a2a9b1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/HTML5_APIs_and_related_technologies_taxonomy_and_status.svg/630px-HTML5_APIs_and_related_technologies_taxonomy_and_status.svg.png">
+            </a>
+        </div>
+        <div>
+            <span>HTML5 related APIs[89]</span>
+            <span class="newapi__icon"></span>
+        </div>
+    </div>
+    <p>In addition to specifying markup, HTML 5 specifies scripting application programming interfaces (APIs) that can be used with JavaScript.[90] Existing Document Object Model (DOM) interfaces are extended and de facto features documented. There are also new APIs, such as:</p>
+    <ul>
+        <li>Canvas;[91]</li>
+        <li>Timed Media Playback;[92]</li>
+        <li>Offline;[93]</li>
+        <li>Editable content;[94]</li>
+        <li>Drag and drop;[95]</li>
+        <li>History;[96]</li>
+        <li>MIME type and protocol handler registration;[97][98]</li>
+        <li>Microdata;[99]</li>
+        <li>Web Messaging;[100]</li>
+        <li>Web Storage – a key-value pair storage framework that provides behavior similar to cookies but with larger storage capacity and improved API.[101]</li>
+    </ul>
+    <p>Not all of the above technologies are included in the W3C HTML 5 specification, though they are in the WHATWG HTML specification.[102] Some related technologies, which are not part of either the W3C HTML 5 or the WHATWG HTML specification, are as follows. The W3C publishes specifications for these separately:</p>
+    <ul>
+        <li>Geolocation;</li>
+        <li>IndexedDB – an indexed hierarchical key-value store (formerly WebSimpleDB);[103]</li>
+        <li>File[104] – an API intended to handle file uploads and file manipulation;[105]</li>
+        <li>Directories and System – an API intended to satisfy client-side-storage use cases not well served by databases;[106]</li>
+        <li>File Writer – an API for writing to files from web applications;[107]</li>
+        <li>Web Audio[108] – a high-level JavaScript API for processing and synthesizing audio in web applications;</li>
+        <li>ClassList.[109]</li>
+        <li>Web cryptography API[110]</li>
+        <li>WebRTC[111]</li>
+        <li>Web SQL Database – a local SQL Database (no longer maintained);[112]</li>
+    </ul>
+    <p>HTML 5 cannot provide animation within web pages. Additional JavaScript or CSS3 is necessary for animating HTML elements. Animation is also possible using JavaScript and HTML 4[113][failed verification], and within SVG elements through SMIL, although browser support of the latter remains uneven as of 2011.</p>
+    <h3 id="XHTML5">
+        XHTML 5 (XML-serialized HTML 5) <span>[ <a href="https://en.wikipedia.org/w/index.php?title=HTML5&action=edit&section=10">edit</a> ]</span>
+    </h3>
+    <p>XML documents must be served with an XML Internet media type (often called "MIME type") such as application/xhtml+xml or application/xml,[90] and must conform to strict, well-formed syntax of XML. XHTML 5 is simply XML-serialized HTML 5 data (that is, HTML 5 constrained to XHTML's strict requirements, e.g., not having any unclosed tags), sent with one of XML media types. HTML that has been written to conform to both the HTML and XHTML specifications and therefore produces the same DOM tree whether parsed as HTML or XML is known as polyglot markup.[114]</p>
+    <p>There is no DTD for XHTML5.[115]</p>
+    <h3 id="error handling">
+        Error handling <span>[ <a href="https://en.wikipedia.org/w/index.php?title=HTML5&action=edit&section=11">edit</a> ]</span>
+    </h3>
+    <p>HTML 5 is designed so that old browsers can safely ignore new HTML 5 constructs.[7] In contrast to HTML 4.01, the HTML 5 specification gives detailed rules for lexing and parsing, with the intent that compliant browsers will produce the same results when parsing incorrect syntax.[116] Although HTML 5 now defines a consistent behavior for "tag soup" documents, those documents do not conform to the HTML 5 standard.[116]</p>
+    <h3 id="popularity">
+        Popularity <span>[ <a href="https://en.wikipedia.org/w/index.php?title=HTML5&action=edit&section=12">edit</a> ]</span>
+    </h3>
+    <p>According to a report released on 30 September 2011, 34 of the world's top 100 Web sites were using HTML 5 – the adoption led by search engines and social networks.[117] Another report released in August 2013 has shown that 153 of the Fortune 500 U.S. companies implemented HTML5 on their corporate websites.[118]</p>
+    <p>Since 2014, HTML 5 is at least partially supported by most popular layout engines.</p>
+    <h3 id="difference">
+        Differences from HTML 4.01 and XHTML 1.x <span>[ <a href="https://en.wikipedia.org/w/index.php?title=HTML5&action=edit&section=13">edit</a> ]</span>
+    </h3>
+    <p>The following is a cursory list of differences and some specific examples.</p>
+    <ul>
+        <li>New parsing rules: oriented towards flexible parsing and compatibility; not based on SGML</li>
+        <li>Ability to use inline SVG and MathML in text/html</li>
+        <li>New elements: article, aside, audio, bdi, canvas, command, data, datalist, details, embed, figcaption, figure, footer, header, keygen, mark, meter, nav, output, progress, rp, rt, ruby, section, source, summary, time, track, video, wbr</li>
+        <li>New types of form controls: dates and times, email, url, search, number, range, tel, color[119]</li>
+        <li>New attributes: charset (on meta), async (on script)</li>
+        <li>Global attributes (that can be applied for every element): id, tabindex, hidden, data-* (custom data attributes)</li>
+        <li>Deprecated elements will be dropped altogether: acronym, applet, basefont, big, center, dir, font, frame, frameset, isindex, noframes, strike, tt</li>
+    </ul>
+    <p>W3C Working Group publishes "HTML5 differences from HTML 4",[120] which provides a complete outline of additions, removals and changes between HTML 5 and HTML 4.</p>
+    <h2 id="logo">Logo <span>[ <a href="https://en.wikipedia.org/w/index.php?title=HTML5&action=edit&section=14">edit</a> ]</span></h2>
+        <div class="newapi__image" style="width: 120px">
+            <div style="width: 122px;">
+                <a>
+                    <img alt="html5" width="120px" height="120px" style="border: 1px solid #a2a9b1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png">
+                </a>
+            </div>
+            <div>
+                <span>HTML5 related APIs[89]</span>
+                <span class="newapi__icon"></span>
+            </div>
+        </div>
+    <p>On 18 January 2011, the W3C introduced a logo to represent the use of or interest in HTML 5. Unlike other badges previously issued by the W3C, it does not imply validity or conformance to a certain standard. As of 1 April 2011, this logo is official.[121]</p>
+    <p>When initially presenting it to the public, the W3C announced the HTML 5 logo as a "general-purpose visual identity for a broad set of open web technologies, including HTML 5, CSS, SVG, WOFF, and others".[122] Some web standard advocates, including The Web Standards Project, criticized that definition of "HTML5" as an umbrella term, pointing out the blurring of terminology and the potential for miscommunication.[122] Three days later, the W3C responded to community feedback and changed the logo's definition, dropping the enumeration of related technologies.[123] The W3C then said the logo "represents HTML5, the cornerstone for modern Web applications".[121]</p>
+    <h2 id="DRM">Digital rights management <span>[ <a href="https://en.wikipedia.org/w/index.php?title=HTML5&action=edit&section=15">edit</a> ]</span></h2>
+    <hr>
+    <div style="margin: 0 5rem" class="box">
+        <img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Ambox_current_red_Asia_Australia.svg/63px-Ambox_current_red_Asia_Australia.svg.png">
+        <p>This section needs to be <strong>updated</strong>. The reason given is: EME is now a W3C recommendation and thus this section seems outdated. Please help update this article to reflect recent events or newly available information. (June 2019)</p>
+    </div>
+    <p>Industry players including the BBC, Google, Microsoft, Apple Inc. have been lobbying for the inclusion of Encrypted Media Extensions (EME),[124][125][126][127][128] a form of digital rights management (DRM), into the HTML 5 standard. As of the end of 2012 and the beginning of 2013, 27 organizations[129] including the Free Software Foundation[130] have started a campaign against including digital rights management in the HTML 5 standard.[131][132] However, in late September 2013, the W3C HTML Working Group decided that Encrypted Media Extensions, a form of DRM, was "in scope" and will potentially be included in the HTML 5.1 standard.[133][134] WHATWG's "HTML Living Standard" continued to be developed without DRM-enabled proposals.[134]</p>
+    <p>Manu Sporny, a member of the W3C, said that EME will not solve the problem it's supposed to address.[135] Opponents point out that EME itself is just an architecture for a DRM plug-in mechanism.[136]</p>
+    <p>The initial enablers for DRM in HTML 5 were Google[137] and Microsoft.[138] Supporters also include Adobe.[139] On 14 May 2014, Mozilla announced plans to support EME in Firefox, the last major browser to avoid DRM.[140][141] Calling it "a difficult and uncomfortable step", Andreas Gal of Mozilla explained that future versions of Firefox would remain open source but ship with a sandbox designed to run a content decryption module developed by Adobe,[140] later it was replaced with Widevine module from Google which is much more widely adopted by content providers. While promising to "work on alternative solutions", Mozilla's Executive Chair Mitchell Baker stated that a refusal to implement EME would have accomplished little more than convincing many users to switch browsers.[141] This decision was condemned by Cory Doctorow and the Free Software Foundation.[142][143]</p>
+    <h2 id="seeAlso">See also <span>[ <a href="https://en.wikipedia.org/w/index.php?title=HTML5&action=edit&section=16">edit</a> ]</span></h2>
+    <hr>
+    <ul>
+        <li>Cache manifest in HTML5</li>
+        <li>Canvas element</li>
+        <li>Comparison of layout engines (HTML5)</li>
+        <li>David Hyatt, Apple editor of HTML5 specs</li>
+        <li>Ian Hickson, Google main editor of HTML5 specs</li>
+        <li>Polyglot HTML5</li>
+    </ul>
+    <h2 id="refrences">Refrences <span>[ <a href="https://en.wikipedia.org/w/index.php?title=HTML5&action=edit&section=17">edit</a> ]</span></h2>
+    <hr>
+    <h2 id="externalLinks">External links <span>[ <a href="https://en.wikipedia.org/w/index.php?title=HTML5&action=edit&section=17">edit</a> ]</span></h2>
+    <hr>
     </body>
 </html>
